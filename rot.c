@@ -11,3 +11,15 @@ int main(){
         scanf("%d",&k);
         *(ptr+i)=k;
     }
+
+    for(j=0;j<b;j++){
+        m=ptr[0];
+        for(i=0;i<a;i++){
+            ptr[i]=ptr[i+1];
+        }
+        ptr[a-1]=m;
+    }
+    for(i=0;i<a;i++){
+        printf("%d ",*(ptr+i));
+    }
+}
